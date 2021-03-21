@@ -1,5 +1,5 @@
 const logger = (msg,key = '') => {
-    const msgDate =  new Date().toDateString() + ' ==>'+ msg;
-    console.log(key,msgDate);
+    const msgDate =  new Date().toLocaleString() + ' ==> '+ msg;
+    console.log(msgDate,key);
 }
 module.exports.logger = logger;

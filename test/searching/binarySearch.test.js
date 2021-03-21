@@ -1,4 +1,4 @@
-const {binarySearch} = require('../../searching/binarySearch.js');
+const { binarySearch } = require('../../searching/binarySearch.js');
 describe('binarySearch', () => {
   it('should search number in sorted array', () => {
     expect(binarySearch([], 1)).toBe(-1);

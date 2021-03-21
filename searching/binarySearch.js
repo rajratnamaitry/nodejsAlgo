@@ -11,7 +11,7 @@ const { logger } = require("../utility/helper");
  * @param {*} value 
  * @returns {number}
  */
-function binarySearch(inputArray,value){
+module.exports.binarySearch =  (inputArray,value)=>{
     logger('start', 'binary Search');
     let startIndex = 0;
     let endIndex = inputArray.length-1;
@@ -43,11 +43,4 @@ function binarySearch(inputArray,value){
         }
     }
     return -1;
-}
-const inputArray = [4, 5, 10, 14, 17, 22, 100];
-const index = binarySearch(inputArray,100);
-if(index != -1){
-    logger(inputArray[index], 'final value')
-}else {
-    logger(' not found ');
 }

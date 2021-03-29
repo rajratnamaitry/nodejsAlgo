@@ -26,5 +26,3 @@ module.exports.interpolationSearch = (inputArray,value)=>{
     return -1
  
 }
-
-console.log(module.exports.interpolationSearch ([10, 20, 30, 40, 50],40))

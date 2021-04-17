@@ -6,7 +6,7 @@
 module.exports.quickSort = (inputArray) =>{
     // clone array
     const array = [...inputArray];
-    if(inputArray <= 1){
+    if(inputArray.length <= 1){
         return array;
     }
     const left = [];
